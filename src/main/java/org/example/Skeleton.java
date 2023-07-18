@@ -1,0 +1,24 @@
+package org.example;
+
+public class Skeleton extends Boss{
+    private int numberOfArrows;
+
+
+    public Skeleton(int health, int damage, Weapon weapon, int numberOfArrows) {
+        super(health, damage, weapon);
+        this.numberOfArrows = numberOfArrows;
+    }
+
+    public int getNumberOfArrows() {
+        return numberOfArrows;
+    }
+
+    public void setNumberOfArrows(int numberOfArrows) {
+        this.numberOfArrows = numberOfArrows;
+    }
+
+
+    public String printInfo(){
+        return super.printInfo()+", Number of Arrows: "+getNumberOfArrows();
+    }
+}
